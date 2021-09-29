@@ -1,7 +1,8 @@
 
 const express = require('express');
 const app = express();
-const PORT = 8080;
+const PORT = process.env["PORT"]
+const st = process.env["STATUS"]
 app.use(express.json());
 const products = [
     {
@@ -23,5 +24,5 @@ const products = [
 
 app.listen(PORT, () => console.log(`API 🟢`))
 
-app.get('/products', (req, res) => { res.status(200).send(products)
+app.get('/products', (req, res) => { res.status(st).send(products)
 })
