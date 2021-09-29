@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-use
+    destination: /opt/codedeploy-agent/deployment-root/f14985b7-637d-4f9f-87a2-fad04aa3ba1e/d-8JPJ05XEC/deployment-archive
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
