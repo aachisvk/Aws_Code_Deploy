@@ -4,9 +4,6 @@ phases:
   pre_build:
     commands:
       #installs dependencies into the node_modules/ directory
-      - wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-      - . ~/.nvm/nvm.sh
-      - nvm install node
       - npm install -g npm
       - npm init -y
       - npm i express --save
