@@ -1,2 +1,2 @@
 #!/bin/bash
-node app.js
+timeout 20m node app.js 
